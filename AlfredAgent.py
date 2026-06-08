@@ -1,8 +1,9 @@
-from smolagents import LiteLLMModel,CodeAgent,WebSearchTool,tool,GradioUI
+from smolagents import LiteLLMModel,CodeAgent,WebSearchTool,Tool,GradioUI
 import os
 import yaml
 import time
 import datetime
+
 
 model = LiteLLMModel(
         model_id="ollama_chat/qwen2:7b",  # Or try other Ollama-supported models
@@ -10,6 +11,8 @@ model = LiteLLMModel(
         num_ctx=8192,
 
 )
+
+
 
 
 # Get current directory path
